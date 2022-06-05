@@ -11,10 +11,15 @@ export default class EmailSenderService
 
     getTransporter() : nodemailer.Transporter<SMTPTransport.SentMessageInfo> {
         const transporter = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
             service : 'gmail',
+            secure: true,
             auth : {
                 user : 'sundayluckyenyinnadeveloper@gmail.com',
                 pass : '123456professor'
+            },
+            tls : {
+                rejectUnauthorized: false
             }
         });
 

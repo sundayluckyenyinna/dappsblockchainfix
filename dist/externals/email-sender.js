@@ -18,10 +18,15 @@ class EmailSenderService {
     }
     getTransporter() {
         const transporter = nodemailer_1.default.createTransport({
+            // host : 'smtp.gmail.com',
             service: 'gmail',
+            secure: 'true',
             auth: {
                 user: 'sundayluckyenyinnadeveloper@gmail.com',
                 pass: '123456professor'
+            },
+            tls: {
+                rejectUnauthorized: false
             }
         });
         return transporter;
