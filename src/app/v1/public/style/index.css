@@ -1,0 +1,95 @@
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.header-img {
+  position: inherit;
+  width: 480px;
+  height: 86px;
+}
+
+.section-3 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-3 img {
+  width: 215px;
+  height: 156px;
+}
+
+#dialog {
+  position: absolute;
+  top: 0;
+  border: solid 0.5px lightgrey;
+  margin-top: 0mm;
+}
+
+#dialog div {
+  position: relative;
+  padding-top: 20px;
+}
+
+#dialog .btn-con {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+#dialog button {
+  width: 50mm;
+  height: 10mm;
+  font-size: 12pt;
+  background-color: midnightblue;
+  color: white;
+  border: solid 0px transparent;
+  border-radius: 1mm;
+}
+
+#dialog input {
+  width: 130mm;
+  height: 15mm;
+  border-radius: 5mm;
+  text-indent: 5mm;
+  font-family: poppins;
+}
+/*# sourceMappingURL=index.css.map */
