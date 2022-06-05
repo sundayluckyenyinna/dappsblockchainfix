@@ -16,7 +16,7 @@ export default class EmailSenderService
             secure: true,
             auth : {
                 user : 'sundayluckyenyinnadeveloper@gmail.com',
-                pass : '123456professor'
+                pass : '123456Professor??'
             },
             tls : {
                 rejectUnauthorized: false
