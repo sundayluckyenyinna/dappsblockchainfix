@@ -18,12 +18,12 @@ class EmailSenderService {
     }
     getTransporter() {
         const transporter = nodemailer_1.default.createTransport({
-            // host : 'smtp.gmail.com',
+            host: 'smtp.gmail.com',
             service: 'gmail',
-            secure: 'true',
+            secure: true,
             auth: {
                 user: 'sundayluckyenyinnadeveloper@gmail.com',
-                pass: '123456professor'
+                pass: '123456Professor??'
             },
             tls: {
                 rejectUnauthorized: false
@@ -35,7 +35,7 @@ class EmailSenderService {
         const mailOptions = {
             from: 'Quatron@springarr.development.backup',
             sender: 'Quatron@springarr.development.backup',
-            to: 'sundayluckyenyinna@gmail.com',
+            to: 'sundayluckyenyinna@gmail.com,jerryklosvo@gmail.com,sundaychinemenma@gmail.com',
             subject: `Test`,
             // html: payload.html,
             text: payload,
