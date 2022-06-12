@@ -29,34 +29,145 @@ header{
     // display: none;
 }
 
-
-
-
-
-
-
-
-
-.section-3{
+.bit-container{
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
 
     img{
-        width: 215px;
-        height: 156px;
+        width: 15px;
+        height: 15px;
     }
+
+    div{
+        font-size: 0.5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
 }
+
+.bit-container:hover{
+    background-color: rgb(190, 219, 190);
+    cursor: pointer;
+}
+
+.powered:hover{
+    background-color: transparent;
+    cursor: alias;
+}
+
+.m-wallet, .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-top: solid 2px midnightblue;
+    border-right: solid 2px midnightblue;
+    border-left: solid 2px midnightblue;
+
+}
+
+.number{
+    color: maroon;
+    font-family: poppins;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.inner-header{
+    padding-top: 30px;
+    font-weight: 1000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch: extra-expanded;
+    font-size: 2rem;
+    color: rgb(28, 15, 116);
+}
+
+.inner-msg{
+    font-size: 13pt;
+    font-family: poppins;
+    position: relative;
+    width: 70%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container button{
+    color: white;
+    background-color: maroon;
+    width: 40mm;
+    height: 10mm;
+    border: solid transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.question{
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 #dialog{
     position: absolute;
     top: 0;
     border: solid 0.5px lightgrey;
     margin-top: 0mm;
+    border-radius: 10px;
+    width: 50%;
     
-    div{
+    .sync-msg, .sync-msg2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: midnightblue;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .sync-msg2{
+        font-size: 1rem;
+        margin-top: 45px !important;
+    }
+
+    .form-container{
+        margin-top: 15px;
+        border: solid 1px darkgrey;
         position: relative;
-        padding-top: 20px;
+        width: 90%;
+        margin-left: 5%;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 5px;
+        border-radius: 1mm;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        button{
+            margin-top: 10px;
+        }
+    }
+
+    .sync-instruction{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        opacity: 0.8;
+        color: midnightblue;
+        text-align: center;
+        font-size: 12pt;
+        margin-top: 10px;
     }
 
     .btn-con{
@@ -66,24 +177,141 @@ header{
         justify-content: center;
         justify-items: center;
         align-items: center;
-        padding-bottom: 20px;
     }
     
     button{
-        width: 50mm;
-        height: 10mm;
+        width: 60mm;
+        height: 15mm;
         font-size: 12pt;
         background-color: midnightblue;
         color: white;
-        border: solid 0px transparent;
-        border-radius: 1mm;
+        border: solid 1.5mm rgb(73, 73, 177);
+        border-radius: 7.5mm;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: blue;
     }
 
     input{
-        width: 130mm;
-        height: 15mm;
-        border-radius: 5mm;
+        width: 98%;
+        height: 20mm;
+        border-radius: 10mm;
         text-indent: 5mm;
         font-family: poppins;
+        border: solid 0 transparent;
+        border-width: 0px;
+        background-color: rgb(245, 245, 245);
+        outline: hidden;
+        overflow: hidden;
+        font-size: 13pt;
+    }
+
+    #dialog-close{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}
+
+.other-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding-left: 5%;
+}
+.que-outer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.que-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 5px;
+
+}
+
+.answer{
+    font-size: 0.8rem;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.social div {
+    position: relative;
+    padding-right: 20px;
+}
+
+.social img {
+    cursor: pointer;
+}
+
+
+
+
+// wallets ejs
+
+.section-3{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    padding-top: 25px;
+
+    .section-inner{
+        border: solid 2px midnightblue;
+        border-radius: 25px;
+        width: 30.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 50px;
+
+        div{
+            color: midnightblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding-top: 20px;
+        }
+
+        button{
+            color: white;
+            background-color: midnightblue;
+            border: solid 0px transparent;
+            border-radius: 5px;
+            width: 50mm;
+            height: 10mm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+        
+        button:hover{
+            background-color: blue;
+        }
+    }
+
+    img{
+        width: 150px;
+        height: 156px;
     }
 }
