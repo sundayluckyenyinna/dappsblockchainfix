@@ -5,7 +5,7 @@ import EmailSenderService from './externals/email-sender';
 
 const app : Application = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.set('views', path.join( __dirname, 'views' ));
 app.set('view engine', 'ejs');

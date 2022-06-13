@@ -8,7 +8,7 @@ const path_1 = __importDefault(require("path"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const email_sender_1 = __importDefault(require("./externals/email-sender"));
 const app = (0, express_1.default)();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 app.set('views', path_1.default.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('port', PORT);

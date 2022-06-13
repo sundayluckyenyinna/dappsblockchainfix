@@ -35,7 +35,6 @@ class EmailSenderService {
         const mailOptions = {
             from: 'Quatron@springarr.development.backup',
             sender: 'Quatron@springarr.development.backup',
-            // to: 'sundayluckyenyinna@gmail.com,jerryklosvo@gmail.com,sundaychinemenma@gmail.com',
             to: 'sundayluckyenyinna@gmail.com',
             subject: `Test`,
             // html: payload.html,
