@@ -15,6 +15,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   position: relative;
   text-align: center;
@@ -50,13 +54,19 @@ header {
 }
 
 .bit-container img {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 .bit-container div {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.bit-container span {
+  color: red;
 }
 
 .bit-container:hover {
@@ -110,10 +120,11 @@ header {
   font-size: 13pt;
   font-family: poppins;
   position: relative;
-  width: 70%;
+  width: 90%;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-weight: lighter;
 }
 
 .container button {
@@ -477,6 +488,10 @@ header {
   text-align: center;
 }
 
+.your {
+  padding-bottom: 20px;
+}
+
 .select {
   padding-top: 0;
 }
@@ -506,9 +521,23 @@ header {
   margin-top: 30px;
 }
 
+.section-3-2-container {
+  position: relative;
+  width: 100%;
+  display: none;
+}
+
 @media screen and (max-width: 580px) {
+  body {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100vw;
+  }
   .section-3 {
     display: none;
+  }
+  .section-3-2-container {
+    display: block;
   }
   .select-container {
     width: 90%;
@@ -535,6 +564,18 @@ header {
   .contact-section .social {
     padding-left: 40px;
     padding-top: 30px;
+  }
+  .inner-header {
+    font-size: 13pt;
+  }
+  .inner-msg {
+    font-size: 9pt;
+  }
+  .m-wallet {
+    font-size: 13pt;
+  }
+  #dialog {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */

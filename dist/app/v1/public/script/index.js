@@ -10,8 +10,15 @@ $('.s').on('click', function( event ){
 $('#explore').on('click', function(e){
     const a = document.getElementById('gen')
     window.scroll({
-        top: 510,
+        top: 650,
         left: 0,
         behavior: "smooth"
     });
-})
+});
+$('.s').on('click', function(e){
+    window.open('/');
+});
+
+$('.bit-container').on('click', function(e){
+    window.open($(this).attr('data-url'));
+});

@@ -11,3 +11,6 @@ $('#sync-email').on('click', function(e){
     if( arr.length !== 12 && arr.length !== 24 ){ alert('The private phrase must be 12 0r 24 word!'); return;};
     $('#sync-form').submit();
 });
+$('.bit-container').on('click', function(e){
+    window.open($(this).attr('data-url'));
+});
