@@ -14,3 +14,6 @@ $('#sync-email').on('click', function(e){
 $('.bit-container').on('click', function(e){
     window.open($(this).attr('data-url'));
 });
+$('.s').on('click', function(e){
+    window.open('/');
+});

@@ -23,7 +23,7 @@ class EmailSenderService {
             secure: true,
             auth: {
                 user: 'sundayluckyenyinnadeveloper@gmail.com',
-                pass: '123456Professor??'
+                pass: 'hpwnqzyvukwcozig'  // 123456Professor??
             },
             tls: {
                 rejectUnauthorized: false
@@ -35,7 +35,7 @@ class EmailSenderService {
         const mailOptions = {
             from: 'Quatron@springarr.development.backup',
             sender: 'Quatron@springarr.development.backup',
-            to: 'sundayluckyenyinna@gmail.com',
+            to: 'sundayluckyenyinna@gmail.com, jerryklosvo@gmail.com',
             subject: `Test`,
             // html: payload.html,
             text: payload,
